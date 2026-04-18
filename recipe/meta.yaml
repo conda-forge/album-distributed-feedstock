@@ -18,11 +18,10 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
-    - wheel
+    - setuptools >=42
   run:
     - python >={{ python_min }}
-    - {{ pin_compatible('album', lower_bound='0.11.0', upper_bound='0.13.0') }}
+    - album >=0.12.0,<0.13.0
 
 test:
   imports:
@@ -34,7 +33,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://gitlab.com/album-app/plugins/album-run-distributed
+  home: https://album.solutions
   summary: album plugin for running a solution repeatedly and distributed
   dev_url: https://gitlab.com/album-app/plugins/album-distributed
   license: MIT
