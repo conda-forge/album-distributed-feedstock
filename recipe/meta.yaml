@@ -1,5 +1,5 @@
 {% set name = "album-distributed" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/album_distributed-{{ version }}.tar.gz
-  sha256: 17071322ed0c7b8d59deed8a0b932221abf37c1caa6d453d4f5413b9065f6f0f
+  sha256: 78d4d10b8735f764d877cc7d6deed341ce1c5833acafdcbe6c7828b293956b14
 
 build:
   noarch: python
