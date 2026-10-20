@@ -1,5 +1,5 @@
 {% set name = "album-distributed" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/album_distributed-{{ version }}.tar.gz
-  sha256: 78d4d10b8735f764d877cc7d6deed341ce1c5833acafdcbe6c7828b293956b14
+  sha256: 2b829f0176951c8d9734b371c4d8380bec23d805d33cafc5a3ff1c470f26a073
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools >=42
   run:
     - python >={{ python_min }}
-    - album >=0.12.0,<0.13.0
+    - album >=1.0.0,<2.0.0
 
 test:
   imports:
